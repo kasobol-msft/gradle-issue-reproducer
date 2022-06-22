@@ -14,3 +14,11 @@ jobs:
     - uses: gradle/gradle-build-action@v2
       with:
         arguments: help --info
+    - name: Execute Gradle build projectA
+      run: ./gradlew :projectA:build
+    - name: Execute Gradle build projectB
+      run: ./gradlew :projectB:build
+    - name: Execute Gradle build projectC
+      run: ./gradlew :projectC:build
+    - name: Execute Gradle build projectD
+      run: ./gradlew :projectD:build
